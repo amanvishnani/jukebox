@@ -1,0 +1,32 @@
+{
+  "external": {
+    "urls": [{
+        "url": "https://fonts.googleapis.com/icon?family=Material+Icons"
+      },
+      {
+        "url": "https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono"
+      }
+    ]
+  },
+  "routing": {
+    "/": {
+      "match": "exact"
+    }
+  },
+  "dynamic": {
+    "group": {
+      "name": "Backand",
+      "urls": {
+        "https://api.backand.com/1/objects/Movies": {
+          "match": "prefix"
+        }
+      },
+      "cache" : {
+        "optimizeFor" : "performance",
+        "maxAgeMs" : 3600,
+        "maxEntries": 200,
+        "strategy": "lru"
+      }
+    }
+  }
+}

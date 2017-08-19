@@ -11,7 +11,8 @@
         "assets",
         "favicon.ico",
         "worker-basic.min.js",
-        "manifest.json"
+        "manifest.json",
+        "_headers"
       ],
       "index": "index.html",
       "main": "main.ts",

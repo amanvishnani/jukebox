@@ -5,16 +5,11 @@
       },
       {
         "url": "https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono"
+      },
+      {
+          "url":"https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"
       }
     ]
-  },
-  "routing": {
-    "index": "/index.html",
-    "routes": {
-      "/": {
-        "match": "exact"
-      }
-    }
   },
   "dynamic": {
     "group": [

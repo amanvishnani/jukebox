@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MdSidenav } from "@angular/material";
 @Component({
+  moduleId : module.id ,  
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']

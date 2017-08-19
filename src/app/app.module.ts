@@ -1,9 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import 'hammerjs';
 import { AppRoutingModule } from "./app-routing/app-routing.module";
-
 
 import { MdSidenavModule, MdButtonModule, MdCheckboxModule, MdToolbarModule, MdIconModule } from "@angular/material";
 

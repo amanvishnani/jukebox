@@ -14,19 +14,21 @@
     }
   },
   "dynamic": {
-    "group": {
-      "name": "Backand",
-      "urls": {
-        "https://api.backand.com/1/objects/Movies": {
-          "match": "prefix"
+    "group": [
+      {
+        "name": "Backand",
+        "urls": {
+          "https://api.backand.com/1/objects/Movies": {
+            "match": "prefix"
+          }
+        },
+        "cache" : {
+          "optimizeFor" : "performance",
+          "maxAgeMs" : 3600,
+          "maxEntries": 2000,
+          "strategy": "lru"
         }
-      },
-      "cache" : {
-        "optimizeFor" : "performance",
-        "maxAgeMs" : 3600,
-        "maxEntries": 200,
-        "strategy": "lru"
       }
-    }
+    ]
   }
 }

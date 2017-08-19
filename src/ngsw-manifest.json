@@ -9,8 +9,11 @@
     ]
   },
   "routing": {
-    "/": {
-      "match": "exact"
+    "index": "/index.html",
+    "routes": {
+      "/": {
+        "match": "exact"
+      }
     }
   },
   "dynamic": {
